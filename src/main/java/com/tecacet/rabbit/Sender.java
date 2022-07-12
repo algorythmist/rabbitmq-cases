@@ -23,7 +23,7 @@ public class Sender {
                 Channel channel = connection.createChannel()) {
             channel.queueDeclare(queueProperties.getQueueName(),
                     queueProperties.isDurable(),
-                    queueProperties.isExclussive(),
+                    queueProperties.isExclusive(),
                     queueProperties.isAutoDelete(), null);
             channel.basicPublish(queueProperties.getExchange(),
                     queueProperties.getQueueName(),

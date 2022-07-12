@@ -10,7 +10,7 @@ public class TaskQueue {
         return QueueProperties.builder()
                 .queueName(TASK_QUEUE_NAME)
                 .durable(true)
-                .exclussive(false)
+                .exclusive(false)
                 .autoDelete(false)
                 .exchange("")
                 .routingKey(TASK_QUEUE_NAME)

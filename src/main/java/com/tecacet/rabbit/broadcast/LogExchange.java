@@ -9,7 +9,7 @@ public class LogExchange {
         return QueueProperties.builder()
                 .queueName("")
                 .durable(true)
-                .exclussive(false)
+                .exclusive(false)
                 .autoDelete(false)
                 .exchange("direct_logs")
                 .exchangeType(ExchangeType.DIRECT)

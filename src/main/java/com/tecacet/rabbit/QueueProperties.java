@@ -13,7 +13,7 @@ public class QueueProperties {
 
     private String queueName = "hello";
     private boolean durable = true;
-    private boolean exclussive = false;
+    private boolean exclusive = false;
     private boolean autoDelete = false;
 
     private String exchange = "";

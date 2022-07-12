@@ -29,7 +29,7 @@ public class Receiver {
         Channel channel = connection.createChannel();
         channel.queueDeclare(queueProperties.getQueueName(),
                 queueProperties.isDurable(),
-                queueProperties.isExclussive(),
+                queueProperties.isExclusive(),
                 queueProperties.isAutoDelete(), null);
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
